@@ -3,13 +3,22 @@ const routes = [
     path: '/',
     component: () => import('@/layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('@/pages/IndexPage.vue') },
-      { path: 'second', component: () => import('@/pages/SecondPage.vue') },
+      { path: '', component: () => import('@/pages/MenuPage.vue') },
+      {
+        path: '/reviews',
+        name: 'reviews',
+        component: () => import('@/pages/ReviewPage.vue'),
+        meta: {
+          requiresAuth: true,
+          roles: ['user', 'admin'],
+        },
+      },
+      { path: '/menu', name: 'menu', component: () => import('@/pages/MenuPage.vue') },
+      { path: '/about', name: 'about', component: () => import('@/pages/AboutusPage.vue') },
+      { path: '/login', name: 'login', component: () => import('@/pages/LoginPage.vue') },
     ],
   },
 
-  // Always leave this as last one,
-  // but you can also remove it
   {
     path: '/:catchAll(.*)*',
     component: () => import('@/pages/ErrorNotFound.vue'),

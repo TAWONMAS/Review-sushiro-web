@@ -1,4 +1,5 @@
 import { defineRouter } from '#q-app'
+import { useAuthStore } from '@/stores/auth-store'
 import {
   createMemoryHistory,
   createRouter,
@@ -7,6 +8,7 @@ import {
 } from 'vue-router'
 
 import routes from './routes.js'
+import { Notify } from 'quasar'
 
 /*
  * If not building with SSR mode, you can
@@ -34,5 +36,28 @@ export default defineRouter((/* { store, ssrContext } */) => {
     history: createHistory(import.meta.env.QUASAR_VUE_ROUTER_BASE),
   })
 
+  Router.beforeEach((to, from, next) => {
+    const authStore = useAuthStore()
+    if (to.meta.requiresAuth && !authStore.isAuthenticated) {
+      Notify.create({
+        type: 'warning',
+        message: 'Please login first for reviews.',
+      })
+      return next({ name: 'login' })
+    }
+    if (to.meta.roles && !to.meta.roles.includes(authStore.role)) {
+      Notify.create({
+        type: 'negative',
+        message: 'You do not have permission to access this page.',
+      })
+      switch (authStore.role) {
+        case 'user':
+          return next({ name: 'user' })
+        case 'admin':
+          return next({ name: 'admin' })
+      }
+    }
+    next()
+  })
   return Router
 })

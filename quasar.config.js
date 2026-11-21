@@ -11,7 +11,7 @@ export default defineConfig((/* ctx */) => {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
-    boot: [],
+    boot: ['pinia', 'axios', 'auth'],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
     css: ['app.scss'],
@@ -40,7 +40,7 @@ export default defineConfig((/* ctx */) => {
       // https://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-router#filename-based-routing
       // filenameBasedRouting: true,
 
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
+      vueRouterMode: 'history', // available values: 'hash', 'history'
       // vueRouterBase,
 
       // publicPath: '/',
@@ -93,7 +93,7 @@ export default defineConfig((/* ctx */) => {
       // directives: [],
 
       // Quasar plugins
-      plugins: [],
+      plugins: ['Notify', 'Dialog', 'Loading'],
     },
 
     // animations: 'all', // --- includes all animations
@@ -153,15 +153,12 @@ export default defineConfig((/* ctx */) => {
       // clientSideRenderingHtmlFilename: 'csr.html',
       // clientSideRenderingRoutes: [],
       // noPreloadTagRoutes: []
-
       // extendSSGRendererConf (rolldownConf) {},
       // extendSSGManifestJson (json) {},
-
       // manualStoreSerialization: true,
       // manualStoreSsrContextInjection: true,
       // manualStoreHydration: true,
       // manualPostHydrationTrigger: true,
-
       // pwa: true,
       // pwaOfflineHtmlFilename: 'offline.html',
       // extendSSGGenerateSWOptions (cfg) {},
@@ -206,13 +203,11 @@ export default defineConfig((/* ctx */) => {
 
       packager: {
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
-
         // OS X / Mac App Store
         // appBundleId: '',
         // appCategoryType: '',
         // osxSign: '',
         // protocol: 'myapp://path',
-
         // Windows only
         // win32metadata: { ... }
       },
