@@ -35,66 +35,91 @@
         />
       </div>
     </main>
-    <h3 class="col q-mx-auto text-center q-mb-xl q-mb-md" style="margin-bottom: 80px" m-1000>
-      ผู้พัฒนาเว็บไซต์
-    </h3>
+    <h3 class="text-center q-px-md" style="margin-bottom: 60px">ผู้พัฒนาเว็บไซต์</h3>
 
+    <!-- jj-->
     <section class="full-width q-px-lg q-pb-xl">
-      <div class="q-mx-auto row items-center q-col-gutter-xl" style="max-width: 900px">
-        <div class="col-12 col-sm-4 flex justify-center">
-          <img
-            src="@/assets/image_aboutusjj_sushi.jpg"
-            alt="Sushi Review"
-            class="shadow-3"
-            style="width: 100%; max-width: 250px; height: auto; border-radius: 12px; display: block"
-          />
-        </div>
+      <div class="q-mx-auto" style="max-width: 900px">
+        <div class="row items-center q-col-gutter-xl">
+          <div class="col-12 col-sm-4 flex justify-center">
+            <img
+              src="@/assets/image_aboutusjj_sushi.jpg"
+              alt="Sushi Review"
+              class="shadow-3"
+              style="
+                width: 100%;
+                max-width: 250px;
+                height: auto;
+                border-radius: 12px;
+                display: block;
+              "
+            />
+          </div>
 
-        <div class="col-12 col-sm-8 text-left text-body1 text-grey-8">
-          <p class="text-weight-bold text-red-8 q-mb-sm">นาย ธนาพล ถาวรมาศ</p>
-          <p class="q-mb-sm">ผู้พัฒนาในส่วนของ MainLayout</p>
-          <p class="q-mb-sm">ผู้พัฒนาในส่วนของ ReviewPage</p>
-          <p class="q-mb-sm">ผู้พัฒนาในส่วนของ Role/Permission</p>
+          <div class="col-12 col-sm-8 dev-info text-body1 text-grey-8">
+            <p class="text-weight-bold text-red-8 q-mb-sm">นาย ธนาพล ถาวรมาศ</p>
+            <p class="q-mb-sm">ผู้พัฒนาในส่วนของ MainLayout</p>
+            <p class="q-mb-sm">ผู้พัฒนาในส่วนของ ReviewPage</p>
+            <p class="q-mb-sm">ผู้พัฒนาในส่วนของ Role/Permission</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- kim-->
     <section class="full-width q-px-lg q-pb-xl">
-      <div class="q-mx-auto row items-center q-col-gutter-xl" style="max-width: 900px">
-        <div class="col-12 col-sm-4 flex justify-center">
-          <img
-            src="@/assets/image_aboutuskim_sushi.jpg"
-            alt="Sushi Review"
-            class="shadow-3"
-            style="width: 100%; max-width: 250px; height: auto; border-radius: 12px; display: block"
-          />
-        </div>
+      <div class="q-mx-auto" style="max-width: 900px">
+        <div class="row items-center q-col-gutter-xl">
+          <div class="col-12 col-sm-4 flex justify-center">
+            <img
+              src="@/assets/image_aboutuskim_sushi.jpg"
+              alt="Sushi Review"
+              class="shadow-3"
+              style="
+                width: 100%;
+                max-width: 250px;
+                height: auto;
+                border-radius: 12px;
+                display: block;
+              "
+            />
+          </div>
 
-        <div class="col-12 col-sm-8 text-left text-body1 text-grey-8">
-          <p class="text-weight-bold text-red-8 q-mb-sm">นางสาว ณัฐณิชา ศรีธรรม</p>
-          <p class="q-mb-sm">ผู้พัฒนาในส่วนของ MenuPage</p>
-          <p class="q-mb-sm">ผู้พัฒนาในส่วนของ ReviewPage</p>
-          <p class="q-mb-sm">ผู้พัฒนาในส่วนของ About</p>
+          <div class="col-12 col-sm-8 dev-info text-body1 text-grey-8">
+            <p class="text-weight-bold text-red-8 q-mb-sm">นางสาว ณัฐณิชา ศรีธรรม</p>
+            <p class="q-mb-sm">ผู้พัฒนาในส่วนของ MenuPage</p>
+            <p class="q-mb-sm">ผู้พัฒนาในส่วนของ ReviewPage</p>
+            <p class="q-mb-sm">ผู้พัฒนาในส่วนของ About</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- pai -->
     <section class="full-width q-px-lg q-pb-xl">
-      <div class="q-mx-auto row items-center q-col-gutter-xl" style="max-width: 900px">
-        <div class="col-12 col-sm-4 flex justify-center">
-          <img
-            src="@/assets/image_aboutuspai_sushi.jpg"
-            alt="Sushi Review"
-            class="shadow-3"
-            style="width: 100%; max-width: 250px; height: auto; border-radius: 12px; display: block"
-          />
-        </div>
+      <div class="q-mx-auto" style="max-width: 900px">
+        <div class="row items-center q-col-gutter-xl">
+          <div class="col-12 col-sm-4 flex justify-center">
+            <img
+              src="@/assets/image_aboutuspai_sushi.jpg"
+              alt="Sushi Review"
+              class="shadow-3"
+              style="
+                width: 100%;
+                max-width: 250px;
+                height: auto;
+                border-radius: 12px;
+                display: block;
+              "
+            />
+          </div>
 
-        <div class="col-12 col-sm-8 text-left text-body1 text-grey-8">
-          <p class="text-weight-bold text-red-8 q-mb-sm">นาย วาที คชลักษ์</p>
-          <p class="q-mb-sm">ผู้พัฒนาในส่วนของ LoginPage</p>
-          <p class="q-mb-sm">ผู้พัฒนาในส่วนของ MainLayout</p>
-          <p class="q-mb-sm">ผู้พัฒนาในส่วนของ MockAPI</p>
+          <div class="col-12 col-sm-8 dev-info text-body1 text-grey-8">
+            <p class="text-weight-bold text-red-8 q-mb-sm">นาย วาที คชลักษ์</p>
+            <p class="q-mb-sm">ผู้พัฒนาในส่วนของ LoginPage</p>
+            <p class="q-mb-sm">ผู้พัฒนาในส่วนของ MainLayout</p>
+            <p class="q-mb-sm">ผู้พัฒนาในส่วนของ MockAPI</p>
+          </div>
         </div>
       </div>
     </section>
@@ -102,3 +127,14 @@
 </template>
 
 <script setup></script>
+
+<style scoped>
+.dev-info {
+  text-align: left;
+}
+@media (max-width: 599px) {
+  .dev-info {
+    text-align: center;
+  }
+}
+</style>

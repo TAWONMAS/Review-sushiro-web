@@ -76,6 +76,7 @@
                   <q-badge color="blue-6">ID: {{ review.id }}</q-badge>
                   <q-badge color="purple-6">User: {{ review.user }}</q-badge>
                 </div>
+
                 <div class="row items-center q-gutter-xs">
                   <q-btn
                     v-if="canEdit(review)"
