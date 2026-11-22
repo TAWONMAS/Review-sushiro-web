@@ -76,7 +76,7 @@
           <p class="text-weight-bold text-red-8 q-mb-sm">นางสาว ณัฐณิชา ศรีธรรม</p>
           <p class="q-mb-sm">ผู้พัฒนาในส่วนของ MenuPage</p>
           <p class="q-mb-sm">ผู้พัฒนาในส่วนของ ReviewPage</p>
-          <p class="q-mb-sm">ผู้พัฒนาในส่วนของ AboutusPage</p>
+          <p class="q-mb-sm">ผู้พัฒนาในส่วนของ Aboutus</p>
         </div>
       </div>
     </section>
